@@ -17,3 +17,5 @@ Now of course, like with everything 'outliers' exist, and in this particular sit
 **svm.ipynb** -- we try another ml supervised algo called svm by classifying suspect students (the labels) and letting the algo create a model. The metrics are pretty bad even after tuning hyper parameters (which in theory increases performance). 
 
 **note** -- we start to look at unsupervised techniques in the form of clustering and certain analysis techniques developed from scratch.
+
+**time&diff and corr matrices**
