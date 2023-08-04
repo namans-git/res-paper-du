@@ -16,6 +16,11 @@ Now of course, like with everything 'outliers' exist, and in this particular sit
 
 **svm.ipynb** -- we try another ml supervised algo called svm by classifying suspect students (the labels) and letting the algo create a model. The metrics are pretty bad even after tuning hyper parameters (which in theory increases performance). 
 
-**note** -- we start to look at unsupervised techniques in the form of clustering and certain analysis techniques developed from scratch.
+**NOTE** -- we start to look at unsupervised techniques in the form of clustering and certain analysis techniques developed from scratch.
 
-**time&diff and corr matrices**
+**time&diff** -- in this script we solely work with **question difficulty** and the **time spent** on that question. first, we do some eda. A lot of it is what one would expect i.e low difficulty - lesser time spent (on average). What we want to work with is the average time spent on each question. The rest of the script revolves around that. First, by sorting students in descending order on the basis of time spent, we find many students answering instantaneously (0 seconds) whereas the average for those questions is around 80 seconds (also worth noting is the fact that the zero brings down the average itself). 
+We also have the choice to sort students on the basis of the time difference (difference b/w their resp times and the avg for that particular question).
+After that, we find the avg resp times for each difficulty for each student (for eg KASHISH NA	took 3.285714 seconds on an avg for low difficulty questions, 22.4 seconds on an avg for med and	8 seconds for high diff questions). What we can do then is compare these particular averages to the class average. For eg. MANPREET SINGH took way less time than the avg for each difficulty, which can be flagged. 
+Also we can work with the idea of 'time slope'. Even for the smartest student (unless he/she already knows of the question), a hard question should in theory take more time than an easy question. If students stray from that 'slope' (low diff -> lesser time, med diff -> relatively more time and so on), for eg answering all questions in an avg time of 4-6 seconds, he/she can be flagged (see MANPREET SINGH in final plot). If we add scores to this we can decipher if they're guessers/cheaters/extremely talented individuals.
+
+**optimal_clusters** -- we work with two well known methods of finding optimal clusters for kmeans: (1) Elbow method - iterates through a number of clusters and then we choose the number where there's a sharp dip in the error. (2) Silhouette method - it is a measure of how similar a data point is within a cluster compared to other clusters. We choose the cluster that maximizes the silhouette score.
