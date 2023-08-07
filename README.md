@@ -1,8 +1,7 @@
-## [research paper](https://www.researchgate.net/publication/371121916_Detection_of_Internet_Cheating_in_Online_Assessments_Using_Cluster_Analysis), student research asst.
+## [Research Paper](https://www.researchgate.net/publication/371121916_Detection_of_Internet_Cheating_in_Online_Assessments_Using_Cluster_Analysis), student research asst.
 
 
-
-## **STARTING NOTE** 
+### **STARTING NOTE** 
 
 
 the notebooks, in conjunction, can be understood as a timeline of trying different machine learning, analysis techniques and learning what works best. Some notebooks might have no conclusions to them but they all play a role in figuring stuff out.
@@ -15,15 +14,25 @@ Now of course, like with everything 'outliers' exist, and in this particular sit
 
 
 
-**average_resp_time.ipynb** -- trivial. Classifying students on the basis of the relation of their respective response times to the class average. 
+### average_resp_time.ipynb
 
-**dtree_rforest.ipynb** -- we have three numerical variables to work on this time. Grades, Exam duration (in secs) and attempt submission time (string format turned to datetime then to epoch). We scale these variables. Now, we have assigned a flagged behaviour '1' to every suspect student (which we've flagged ourselves by going through the data) and every other student the default behaviour '0' (how we've done is this shown in a notebook later on). The pairplot advocates for the classification in the fact that the 'std_scaled_submtime' is abnormally close for the flagged students (see pairplot). We now try the supervised techniques decision trees and random forests. the performance metrics aren't the best as one would imagine since exam data consisting of scores and times can't really be modelized. The idea remained the same regardless, if given enough data we create a model and if a new student strays from the expected, he/she is flagged. 
+trivial. Classifying students on the basis of the relation of their respective response times to the class average. 
 
-**svm.ipynb** -- we try another ml supervised algo called svm by classifying suspect students (the labels) and letting the algo create a model. The metrics are pretty bad even after tuning hyper parameters (which in theory increases performance). 
+### dtree_rforest.ipynb
 
-**NOTE** -- we start to look at unsupervised techniques in the form of clustering and certain analysis techniques developed from scratch.
+we have three numerical variables to work on this time. Grades, Exam duration (in secs) and attempt submission time (string format turned to datetime then to epoch). We scale these variables. Now, we have assigned a flagged behaviour '1' to every suspect student (which we've flagged ourselves by going through the data) and every other student the default behaviour '0' (how we've done is this shown in a notebook later on). The pairplot advocates for the classification in the fact that the 'std_scaled_submtime' is abnormally close for the flagged students (see pairplot). We now try the supervised techniques decision trees and random forests. the performance metrics aren't the best as one would imagine since exam data consisting of scores and times can't really be modelized. The idea remained the same regardless, if given enough data we create a model and if a new student strays from the expected, he/she is flagged. 
 
-**time&diff** -- in this script we solely work with **question difficulty** and the **time spent** on that question. first, we do some eda. A lot of it is what one would expect i.e low difficulty - lesser time spent (on average). What we want to work with is the average time spent on each question. The rest of the script revolves around that. First, by sorting students in descending order on the basis of time spent, we find many students answering instantaneously (0 seconds) whereas the average for those questions is around 80 seconds (also worth noting is the fact that the zero brings down the average itself).\
+### svm.ipynb
+
+we try another ml supervised algo called svm by classifying suspect students (the labels) and letting the algo create a model. The metrics are pretty bad even after tuning hyper parameters (which in theory increases performance). 
+
+
+### time&diff.ipynb
+
+in this script we solely work with **question difficulty** and the **time spent** on that question. first, we do some eda. A lot of it is what one would expect i.e low difficulty - lesser time spent (on average). What we want to work with is the average time spent on each question. The rest of the script revolves around that. First, by sorting students in descending order on the basis of time spent, we find many students answering instantaneously (0 seconds) whereas the average for those questions is around 80 seconds (also worth noting is the fact that the zero brings down the average itself).\
 We also have the choice to sort students on the basis of the time difference (difference b/w their resp times and the avg for that particular question).\
 After that, we find the avg resp times for each difficulty for each student (for eg KASHISH NA	took 3.285714 seconds on an avg for low difficulty questions, 22.4 seconds on an avg for med and	8 seconds for high diff questions). What we can do then is compare these particular averages to the class average. For eg. MANPREET SINGH took way less time than the avg for each difficulty, which can be flagged.\
 Also we can work with the idea of 'time slope'. Even for the smartest student (unless he/she already knows of the question), a hard question should in theory take more time than an easy question. If students stray from that 'slope' (low diff -> lesser time, med diff -> relatively more time and so on), for eg answering all questions in an avg time of 4-6 seconds, he/she can be flagged (see MANPREET SINGH in final plot). If we add scores to this we can decipher if they're guessers/cheaters/extremely talented individuals.
+
+
+**NOTE** -- we start to look at unsupervised techniques in the form of clustering and certain analysis techniques developed from scratch.
