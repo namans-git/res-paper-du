@@ -3,7 +3,8 @@
 
 ### **STARTING NOTE** 
 
-the notebooks, in conjunction, can be understood as a timeline of trying different machine learning, analysis techniques and learning what works best. Some notebooks might have no conclusions to them but they all play a role in figuring stuff out.
+I worked under [Mrs. Manika Garg Shandilya](https://scholar.google.com/citations?user=rl6x0sIAAAAJ&hl=en) for a period of 8-9 months in my final year during which I assisted her with her research paper. It was my first experience at something outside college coursework and I couldn't have asked for a better mentor and opportunity.
+Talking about the notebooks in this repo, they (in conjunction) can be understood as a timeline of trying different machine learning, analysis techniques and learning what works best. Some notebooks might have no conclusions to them but they all play a role in figuring stuff out.
 
  ### res_paper_linreg.ipynb
 
