@@ -38,4 +38,9 @@ Also we can work with the idea of 'time slope'. Even for the smartest student (u
 
 Though there are only two var in this script, we find that later on that changes. We're only looking at the methods we want to use right now. There are broadly 4 unsupervised techniques for feature selection/variable importance namely filter methods, wrapper methods, embedded methods and hybrid methods. We only work with the filter methods for now. They pick up the intrinsic properties of the features measured via univariate statistics. They can effectively remove irrelevant features but are unable to remove redundant ones (which we can work on ourselves). Information gain is an entropy based method. It can be defined as the amount of information provided by the feature. The second one is the Extra Trees Classifier which utilizes multiple decision trees and selects features based on their importance scores, making it less sensitive to noise and irrelevant features. Finally, we work with a correlation matrix which is a very simple idea. Simply the feature that correlates more with the cluster variable is more important.
 
+
+### EllipticEnvelope.ipynb
+
+after scaling, we try using sklearn's object EllipticEnvelope which detects outliers in a Gaussian distributed dataset. We can play around with the contamination parameter, i.e. the proportion of outliers in the data set.
+
 **NOTE** -- we start to look at unsupervised techniques in the form of clustering and certain analysis techniques developed from scratch.
