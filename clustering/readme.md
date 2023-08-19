@@ -1,5 +1,5 @@
 ### **Clustering**
-using supervised techniques for detection of stray/deviated behaviour may be a good idea in other cases, but in a scenario like ours where we can't say for sure if someone is cheating or not, we shift to clustering; to analysing data as it is and not prediction. We work with K means. 
+using supervised techniques for detection of stray/deviated behaviour may be a good idea in other cases, but in a scenario like ours where we can't say for sure if someone is cheating or not (which would label the data), we shift to clustering; to analysing data as it is and not prediction. We work with K means. 
 
 ### **optimal_clusters.ipynb**
 
