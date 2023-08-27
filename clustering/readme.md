@@ -24,3 +24,10 @@ We have the variables:
 5. flagged when correct (same as flags but question was answered correctly)
 6. low/mid/high_diff_rt: collective response time of each student for each difficulty level
 7. low/mid/high_diff_rt_correct: same as (6) but the questions are answered correctly.
+
+
+### **kmeans_main.ipynb**
+
+we work with the 'Front.xlsx' file which has the features **username, submission time, time spent and total score**. After some exploratory data analysis, we create a new dataframe with the two features we'll be using for clustering which are **time spent** and **total score**. After scaling we instantiate the kmeans method giving it the parameter of 4 'clusters' (using elbow and silhouette). The algorithm sorts the data points (students) into clusters. Afterwards we do some visualization.
+
+Talking about kmeans 
