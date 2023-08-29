@@ -3,8 +3,8 @@
 
 ### **STARTING NOTE** 
 
-I worked under [Mrs. Manika Garg Shandilya](https://scholar.google.com/citations?user=rl6x0sIAAAAJ&hl=en) for a period of 8-9 months in my final year during which I assisted her with her research paper. It was my first experience at something outside college coursework and I couldn't have asked for a better mentor and opportunity.
-Talking about the notebooks in this repo, they can be understood, in conjunction, as a timeline of trying different machine learning and analysis techniques. Learning what works and how our thought processes evolved. Some notebooks might have no conclusions to them but they all play a role in figuring stuff out.
+In my final academic year, I worked alongside [Mrs. Manika Garg Shandilya](https://scholar.google.com/citations?user=rl6x0sIAAAAJ&hl=en) for about 8-9 months, aiding her research paper. This experience marked my first foray beyond typical college coursework, and I am immensely grateful for the exceptional mentorship and opportunity it offered.
+Discussing the notebooks within this repository, they collectively form a timeline of experimentation with various machine learning and analysis techniques. While certain notebooks might lack definitive conclusions, each one contributes significantly to our progressive understanding of the subject matter.
 
  ### res_paper_linreg.ipynb
 
