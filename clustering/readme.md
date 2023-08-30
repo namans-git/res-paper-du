@@ -30,4 +30,4 @@ We have the variables:
 
 we work with the 'Front.xlsx' file which has the features **username, submission time, time spent and total score**. After some exploratory data analysis, we create a new dataframe with the two features we'll be using for clustering which are **time spent** and **total score**. After scaling we instantiate the kmeans method giving it the parameter of 4 'clusters' (using elbow and silhouette). The algorithm sorts the data points (students) into clusters. Afterwards we do some visualization.
 
-Talking about kmeans 
+**write some more about kmeans here**
