@@ -3,7 +3,7 @@
 
 ### **STARTING NOTE** 
 
-In my final academic year, I worked alongside [Mrs. Manika Garg Shandilya](https://scholar.google.com/citations?user=rl6x0sIAAAAJ&hl=en) for about 8-9 months, assisting her with her research paper. This experience marked my first foray beyond typical college coursework, and I am immensely grateful for the exceptional mentorship and opportunity it offered.
+In my final academic year, I worked alongside [Mrs. Manika Garg Shandilya](https://scholar.google.com/citations?user=rl6x0sIAAAAJ&hl=en) and [Prof. Anita Goel](https://scholar.google.co.in/citations?user=3Q68CjYAAAAJ&hl=en) for about 8-9 months, assisting her with her research paper. This experience marked my first foray beyond typical college coursework, and I am immensely grateful for the exceptional mentorship and opportunity it offered.
 Discussing the notebooks within this repository, they collectively form a timeline of experimentation with various machine learning and analysis techniques. While certain notebooks might lack definitive conclusions, each one contributes significantly to our progressive understanding of the subject matter.
 
  ### res_paper_linreg.ipynb
